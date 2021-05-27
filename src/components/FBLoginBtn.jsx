@@ -1,6 +1,7 @@
-import React,{useState} from 'react'
-import ReactDOM from 'react-dom'
-import FacebookLogin from 'react-facebook-login'
+import React,{useState,useEffect} from 'react';
+import axios from 'axios';
+import ReactDOM from 'react-dom';
+import FacebookLogin from 'react-facebook-login';
 
 const FBLoginBtn = () => {
     const [fbLoginResponse,setFbLoginResponse] = useState(null);
@@ -9,9 +10,21 @@ const FBLoginBtn = () => {
         console.log(response);
         setFbLoginResponse(response);
     };
+
+    const getUserData = () => {
+        const getUserDataURL = `https://graph.facebook.com/v10.0/me/accounts?access_token=${fbLoginResponse.accessToken}`;
+        axios.get(getUserDataURL)
+            .then(res =>{
+                console.log(res);
+            });
+    };
         
 
     const componentClicked = () => console.log('clicked');
+
+    useEffect(()=>{
+        getUserData();
+    },[fbLoginResponse]);
 
     return (
         <div className="FBLoginBtn">
