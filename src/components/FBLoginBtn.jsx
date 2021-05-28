@@ -23,6 +23,7 @@ const FBLoginBtn = () => {
     const componentClicked = () => console.log('clicked');
 
     useEffect(()=>{
+        console.log('useEffect triggered');
         getUserData();
     },[fbLoginResponse]);
 
