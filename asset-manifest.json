@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/impersonator_checker/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/impersonator_checker/static/js/main.4113bc23.chunk.js",
-    "main.js.map": "/impersonator_checker/static/js/main.4113bc23.chunk.js.map",
+    "main.js": "/impersonator_checker/static/js/main.78045058.chunk.js",
+    "main.js.map": "/impersonator_checker/static/js/main.78045058.chunk.js.map",
     "runtime-main.js": "/impersonator_checker/static/js/runtime-main.e654c798.js",
     "runtime-main.js.map": "/impersonator_checker/static/js/runtime-main.e654c798.js.map",
     "static/js/2.7a4eba7f.chunk.js": "/impersonator_checker/static/js/2.7a4eba7f.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.e654c798.js",
     "static/js/2.7a4eba7f.chunk.js",
     "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.4113bc23.chunk.js"
+    "static/js/main.78045058.chunk.js"
   ]
 }
