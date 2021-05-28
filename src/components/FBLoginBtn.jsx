@@ -30,7 +30,7 @@ const FBLoginBtn = () => {
         <div className="FBLoginBtn">
             <FacebookLogin
             appId="790536071666674"
-            autoLoad={true}
+            autoLoad={false}
             field="name, email, picture"
             onClick={componentClicked}
             callback={responseFBLogin}
